@@ -63,12 +63,12 @@
       <label for="floatingPassword">Password</label>
     </div>
     <div class="form-floating">
-      <input type="password" class="form-control" id="CPassword" placeholder="Confirm Password" onkeyup='check();' required>
+      <input type="password" class="form-control" id="CPassword" placeholder="Confirm Password" onkeyup='pCheck();' required>
       <label for="floatingPassword2">Confirm Password</label>
     </div>
     <span id = "message" style="color:red"> </span>
 
-    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign Up</button>
+    <button class="w-100 btn btn-lg btn-primary" type="submit" onclick='passwordCheck();'>Sign Up</button>
   </form>
 </main>
 
