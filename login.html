@@ -4,8 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.87.0">
-    <title>E-Library: Login</title>    
+    <title>E-Library: Login</title>
+    
 
     <!-- Bootstrap core CSS -->
     <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -26,12 +28,61 @@
       }
     </style>
 
-
     <link href="style/login.css" rel="stylesheet">
+    
   </head>
-  
   <body class="text-center">
     
+<header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">About</h4>
+          <p class="text-muted">E-Library is a place where the traditional library with books is transformed into digital version where users can borrow books and manage their profile on the website.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <img src="imgs/books1.png" style="height:40px;">
+        <strong> E-Library </strong>
+      </a>
+
+      <a href="index.html" class="navbar-brand d-flex align-items-center">
+        <pre>    </pre>
+        <h6>Home</h6>
+      </a>
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <pre>    </pre>
+        <h6>About Us</h6>
+      </a>
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <pre>    </pre>
+        <h6>Terms</h6>
+      </a>
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <pre>    </pre>
+        <h6>View Books</h6>
+      </a>
+      <a href="login.html" class="navbar-brand d-flex align-items-center">
+        <pre>    </pre>
+        <h6>User Login</h6>
+      </a>
+      <a href="signup.html" class="navbar-brand d-flex align-items-center">
+        <pre>    </pre>
+        <h6>Sign Up</h6>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
 <main class="form-signin">
   <script src="script/signup.js"></script>
   
@@ -48,11 +99,12 @@
       <label for="floatingPassword">Password</label>
     </div>
 
-    <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
+    <button class="w-100 btn btn-lg btn-primary" type="submit" onclick="loginCheck();">Login</button>
   </form>
+
 </main>
 
-
-    
+  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+      
   </body>
 </html>
